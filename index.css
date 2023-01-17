@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+   
+}
+body{
+    background-image: url(/shara_desert.jpg);
+
+background-size: cover;
+background-position: center;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navBar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.logo2{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+    
+.content{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    margin-right:-250px;
+}
+.sahara{
+    flex-basis: 50%;
+    /* margin-right:-200; */
+}
+h1{
+    color: white;
+    font-size: 100px;
+}
+p{
+    color: white;
+    font-size: 12px;
+    line-height: 1;
+}
+button{
+    width: 180px;
+    color: black;
+    font-size: 12px;
+    padding: 12px 0;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 285px 290px;
+    grid-template-rows: 290px 260px;
+    place-content: center;
+    grid-gap: 30px;
+}
+.box{
+width: 200px;
+height: 230px;
+border-radius: 10px;
+padding: 15px 15px;
+
+cursor: pointer;
+
+background-position: center;
+background-size: cover;
+transition: transform 0.5s;
+}
+.b1{
+    background-image: url(./pic-1.png);
+}
+.b2{
+    background-image: url(./pic-2.png);
+}
+.b3{
+    background-image: url(./pic-3.png);
+}
+.b4{
+    background-image: url(./pic-4.png);
+    
+}
+.box:hover{
+    transform: translate(-15px);
+
+}
+@media screen and (min-width:250px) and (max-width:600px)
+{
+    .grid{
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(4,200px);
+    grid-gap: 20px;
+    place-content: center;
+    position: relative;
+    right: 366px;
+    top: 584px;
+    }
+    
+    .box
+    {
+        height:100px;
+        width:300px;
+    }
+}
+@media screen and (min-width :600px) and (max-width:1000px)
+{
+    .grid{
+        grid-template-columns: 300px;
+        grid-gap: 20px;
+        position:relative;
+        right:200px;
+        top:300px;
+    }
+    .box
+    {
+        width:300px;
+        height:100px
+    } 
+}
+    
+h4{
+    color: white;
+}
+p{
+    color: white;
+}
